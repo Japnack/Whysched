@@ -1,0 +1,19 @@
+<h1>{{ todayDate }}</h1>
+
+<h2>What are you day priorities ?</h2>
+
+<span>{{ userMessage }}</span>
+<form [formGroup]="form">
+  <div>
+    <input type="text" formControlName="priority" />
+  </div>
+  <button type="submit" (click)="addPriority()">+</button>
+</form>
+
+<div>
+  <ol>
+    <li *ngFor="let priority of priorities">{{ priority }}</li>
+  </ol>
+</div>
+
+<button (click)="submitDayPriorities()">Submit</button>

@@ -1,9 +1,9 @@
 
 version 0 : ( mvp )
 
-1. user goes to calendar selects the day, and start filling the schedule 
-2. schedule contain day priorities, brain storming. 
-3. store user commitment
+1. schedule day priorities.  limit the priorities to 3 
+2. store user commitment
+3. improve ux.
 
 
 version 1 : 
@@ -12,7 +12,7 @@ version 1 :
 
 version 2 : 
     1. user can selects the day to see the sheet. ( display a calendar )
-    2. user gets notifcation before going to bed to prepare a sheet
+    2. user gets notification before going to bed to prepare a sheet
 
 
 
