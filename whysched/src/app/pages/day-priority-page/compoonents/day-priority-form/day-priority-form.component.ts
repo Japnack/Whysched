@@ -1,14 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DayPriorityService } from '../../services/day-priority.service';
+import { DayPriorityService } from '../../../../services/day-priority.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-day-priority',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FormsModule],
-  providers: [DayPriorityService],
   templateUrl: './day-priority-form.component.html',
   styleUrl: './day-priority-form.component.scss',
 })

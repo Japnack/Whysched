@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DayPriority } from '../pages/day-priority-form/models/day-priority';
+import { DayPriority } from '../pages/day-priority-page/compoonents/day-priority-form/models/day-priority';
 
 @Injectable()
 export class DayPriorityService {

@@ -1,11 +1,13 @@
 import { Routes } from '@angular/router';
-import { DayPriorityFormComponent } from './pages/day-priority-form/day-priority-form.component';
-import { DayPriorityComponent } from './pages/day-priority/day-priority.component';
+
+import { DayPriorityPageComponent } from './pages/day-priority-page/day-priority-page.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: DayPriorityComponent,
+    loadChildren: () =>
+      import('./pages/day-priority-page/day-priority-page.module').then(
+        (m) => m.DayPriorityPageModule
+      ),
   },
-  { path: 'today-goal', component: DayPriorityFormComponent },
 ];

@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { DayPriorityService } from '../../services/day-priority.service';
+import { DayPriorityService } from '../../../../services/day-priority.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
