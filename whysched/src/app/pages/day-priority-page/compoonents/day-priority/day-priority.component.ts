@@ -23,7 +23,7 @@ export class DayPriorityComponent implements OnInit {
     if (dayPriority && dayPriority.date === this.todayDate) {
       this.priorities = dayPriority.priorities;
     } else {
-      this.router.navigateByUrl('today-goal');
+      this.router.navigateByUrl('my-day');
     }
   }
 }

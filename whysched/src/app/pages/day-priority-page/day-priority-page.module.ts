@@ -6,6 +6,9 @@ import { DayPriorityFormComponent } from './compoonents/day-priority-form/day-pr
 import { DayPriorityPageRoutingModule } from './day-priority-page.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DayPriorityService } from '../../services/day-priority.service';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [DayPriorityPageComponent, DayPriorityFormComponent],
@@ -13,6 +16,9 @@ import { DayPriorityService } from '../../services/day-priority.service';
   imports: [
     CommonModule,
     RouterModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
     DayPriorityPageRoutingModule,
     FormsModule,
     ReactiveFormsModule,

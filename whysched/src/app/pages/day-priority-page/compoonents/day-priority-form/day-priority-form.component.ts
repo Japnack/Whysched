@@ -12,7 +12,6 @@ import { Router } from '@angular/router';
 export class DayPriorityFormComponent {
   router = inject(Router);
   dayPriorityService = inject(DayPriorityService);
-
   todayDate = new Date().toLocaleDateString();
   userMessage = '';
   form = this.formBuilder.group({

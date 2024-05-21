@@ -9,8 +9,8 @@ const routes: Routes = [
     path: '',
     component: DayPriorityPageComponent,
     children: [
-      { path: '', component: DayPriorityFormComponent },
-      { path: 'my-day', component: DayPriorityComponent },
+      { path: '', component: DayPriorityComponent },
+      { path: 'my-day', component: DayPriorityFormComponent },
       { path: '**', redirectTo: '' },
     ],
   },
