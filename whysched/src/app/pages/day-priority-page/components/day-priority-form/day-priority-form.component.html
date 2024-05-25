@@ -1,6 +1,4 @@
 <div class="container">
-  <span>{{ userMessage }}</span>
-
   <form class="form" [formGroup]="form">
     <div class="form-content">
       <mat-form-field appearance="outline">
@@ -20,12 +18,16 @@
         Add <mat-icon>add</mat-icon>
       </button>
     </div>
+    <span>{{ userMessage }}</span>
   </form>
 
   <div class="priority-list">
-    <div *ngFor="let priority of priorities" class="priority">
-      {{ priority }}
-    </div>
+    <app-day-priority-item
+      *ngFor="let priority of priorities; let index = index"
+      [priority]="priority"
+      [degrees]="PRIORITY_MAX - index"
+      class="priority"
+    ></app-day-priority-item>
   </div>
 
   <button

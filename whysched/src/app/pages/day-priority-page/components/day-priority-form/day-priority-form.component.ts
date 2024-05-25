@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DayPriorityService } from '../../../../services/day-priority.service';
 import { Router } from '@angular/router';
@@ -19,6 +19,8 @@ export class DayPriorityFormComponent {
   });
 
   priorities: string[] = [];
+
+  PRIORITY_MAX = 3
 
   constructor(private formBuilder: FormBuilder) {}
 

@@ -5,8 +5,6 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-day-priority',
-  standalone: true,
-  imports: [CommonModule],
   providers: [DayPriorityService],
   templateUrl: './day-priority.component.html',
   styleUrl: './day-priority.component.scss',
@@ -17,6 +15,8 @@ export class DayPriorityComponent implements OnInit {
 
   todayDate = new Date().toLocaleDateString();
   priorities!: string[];
+
+  PRIORITY_MAX = 3;
 
   ngOnInit(): void {
     const dayPriority = this.dayPriorityService.getPriorities();
