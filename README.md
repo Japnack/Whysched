@@ -10,8 +10,8 @@
   ```bash
 
 
-  git clone https://github.com/angular/quickstart  my-proj
-  cd my-proj
+  git clone https://github.com/ayoubloukil/Whysched.git
+  cd Whysched
 + Install npm packages
 
   ```bash
