@@ -20,3 +20,11 @@
    npm install
    npm start
   
+  ```bash
+
+
+  # Navigate to the project directory
+  cd my-angular-app
+  
+  # Serve the application
+  ng serve
