@@ -19,12 +19,14 @@
 
    npm install
    npm start
+
+ + Launch the Angular project
   
   ```bash
 
 
   # Navigate to the project directory
-  cd my-angular-app
+  cd Whysched
   
   # Serve the application
   ng serve
