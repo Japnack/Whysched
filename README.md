@@ -15,18 +15,16 @@
 + Install npm packages
 
   ```bash
-
-
-   npm install
-   npm start
-
+    npm install
+    npm start
  + Launch the Angular project
-  
-  ```bash
-
-
-   # Navigate to the project directory
-   cd Whysched
    
-   # Serve the application
-   ng serve
+    ```bash
+      # Navigate to the project directory
+      cd Whysched
+     
+      # Serve the application
+      ng serve
+
+
+ 
