@@ -25,8 +25,8 @@
   ```bash
 
 
-  # Navigate to the project directory
-  cd Whysched
-  
-  # Serve the application
-  ng serve
+   # Navigate to the project directory
+   cd Whysched
+   
+   # Serve the application
+   ng serve
