@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="priority-list">
+    <app-day-priority-item
+      *ngFor="let priority of priorities; let index = index"
+      [degrees]="2"
+      class="priority"
+      [degrees]="PRIORITY_MAX - index"
+      [priority]="priority"
+    ></app-day-priority-item>
+  </div>
+</div>

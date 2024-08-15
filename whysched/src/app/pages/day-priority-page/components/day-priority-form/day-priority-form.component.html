@@ -1,0 +1,41 @@
+<div class="container">
+  <form class="form" [formGroup]="form">
+    <div class="form-content">
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          placeholder="Write a priority that would make your day"
+          type="text"
+          formControlName="priority"
+        />
+      </mat-form-field>
+      <button
+        mat-flat-button
+        type="submit"
+        class="add-priority-button"
+        (click)="addPriority()"
+      >
+        Add <mat-icon>add</mat-icon>
+      </button>
+    </div>
+    <span>{{ userMessage }}</span>
+  </form>
+
+  <div class="priority-list">
+    <app-day-priority-item
+      *ngFor="let priority of priorities; let index = index"
+      [priority]="priority"
+      [degrees]="PRIORITY_MAX - index"
+      class="priority"
+    ></app-day-priority-item>
+  </div>
+
+  <button
+    mat-flat-button
+    color="primary"
+    *ngIf="priorities.length > 0"
+    (click)="submitDayPriorities()"
+  >
+    Submit
+  </button>
+</div>
